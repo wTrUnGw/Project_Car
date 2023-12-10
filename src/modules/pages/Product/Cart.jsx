@@ -33,7 +33,7 @@ export default function Cart({
                     <th>Tên sản phẩm</th>
                     <th>Hình ảnh</th>
                     <th>Số lượng</th>
-                    <th>Đơn giá</th>
+                    <th>Tiền cọc</th>
                     <th>Thành tiền</th>
                     <th></th>
                   </tr>
@@ -64,8 +64,8 @@ export default function Cart({
                             -
                           </button>
                         </td>
-                        <td>{item.price.toLocaleString()} $</td>
-                        <td>{(item.price * item.soLuong).toLocaleString()} $</td>
+                        <td>{item.price.toLocaleString()} VNĐ</td>
+                        <td>{(item.price * item.soLuong).toLocaleString()} VNĐ</td>
                         <td>
                           <button
                             onClick={() => onDeleteProductFromCart(item.id)}

@@ -22,9 +22,7 @@ export default function Header() {
                     Tra cứu
                   </NavLink>
                 </li>
-                <li>
-                  <a href="#">Tin tức</a>
-                </li>
+
                 <li>
                   <NavLink className="nav-link" to="/contact">
                     Liên hệ
@@ -33,6 +31,16 @@ export default function Header() {
                 <li>
                   <NavLink className="nav-link" to="/about">
                     Về chúng tôi
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="nav-link" to="/signup">
+                    Đăng kí
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="nav-link" to="/login">
+                    Đăng nhập
                   </NavLink>
                 </li>
               </ul>

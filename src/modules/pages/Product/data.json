@@ -1,122 +1,137 @@
 [
-    {
-      "id": 1,
-      "name": "Adidas Prophere",
-      "alias": "adidas-prophere",
-      "price": 350,
-      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
-      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
-      "quantity": 995,
-      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fhuytravelcantho.com%2Fdich-vu%2Fxe-45-cho-doi-moi%2F&psig=AOvVaw3pRGB5Pz5fqCsWTp78pp61&ust=1701695997032000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOiZvd6t84IDFQAAAAAdAAAAABAE"
-    },
-    {
-      "id": 2,
-      "name": "Adidas Prophere Black White",
-      "alias": "adidas-prophere-black-white",
-      "price": 450,
-      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
-      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
-      "quantity": 990,
-      "image": "http://svcy3.myclass.vn/images/adidas-prophere-black-white.png"
-    },
-    {
-      "id": 3,
-      "name": "Adidas Prophere Customize",
-      "alias": "adidas-prophere-customize",
-      "price": 375,
-      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
-      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
-      "quantity": 415,
-      "image": "http://svcy3.myclass.vn/images/adidas-prophere-customize.png"
-    },
-    {
-      "id": 4,
-      "name": "Adidas Super Star Red",
-      "alias": "adidas-super-star-red",
-      "price": 465,
-      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
-      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
-      "quantity": 542,
-      "image": "http://svcy3.myclass.vn/images/adidas-super-star-red.png"
-    },
-    {
-      "id": 5,
-      "name": "Adidas Swift Run",
-      "alias": "adidas-swift-run",
-      "price": 550,
-      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
-      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
-      "quantity": 674,
-      "image": "http://svcy3.myclass.vn/images/adidas-swift-run.png"
-    },
-    {
-      "id": 6,
-      "name": "Adidas Tenisky Super Star",
-      "alias": "adidas-tenisky-super-star",
-      "price": 250,
-      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
-      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
-      "quantity": 456,
-      "image": "http://svcy3.myclass.vn/images/adidas-tenisky-super-star.png"
-    },
-    {
-      "id": 7,
-      "name": "Adidas Ultraboost 4",
-      "alias": "adidas-ultraboost-4",
-      "price": 450,
-      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
-      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
-      "quantity": 854,
-      "image": "http://svcy3.myclass.vn/images/adidas-ultraboost-4.png"
-    },
-    {
-      "id": 8,
-      "name": "Adidas Yeezy 350",
-      "alias": "adidas-yeezy-350",
-      "price": 750,
-      "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
-      "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
-      "quantity": 524,
-      "image": "http://svcy3.myclass.vn/images/adidas-yeezy-350.png"
-    },
-    {
-      "id": 9,
-      "name": "Nike Adapt BB",
-      "alias": "nike-adapt-bb",
-      "price": 630,
-      "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
-      "shortDescription": "Paul George is the rare high-percentage shooter",
-      "quantity": 599,
-      "image": "http://svcy3.myclass.vn/images/nike-adapt-bb.png"
-    },
-    {
-      "id": 10,
-      "name": "Nike Air Max 97",
-      "alias": "nike-air-max-97",
-      "price": 650,
-      "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
-      "shortDescription": "Paul George is the rare high-percentage shooter",
-      "quantity": 984,
-      "image": "http://svcy3.myclass.vn/images/nike-air-max-97.png"
-    },
-    {
-      "id": 11,
-      "name": "Nike Air Max 97 Blue",
-      "alias": "nike-air-max-97-blue",
-      "price": 450,
-      "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
-      "shortDescription": "Paul George is the rare high-percentage shooter",
-      "quantity": 875,
-      "image": "http://svcy3.myclass.vn/images/nike-air-max-97-blue.png"
-    },
-    {
-      "id": 12,
-      "name": "Nike Air Max 270 React",
-      "alias": "nike-air-max-270-react",
-      "price": 750,
-      "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
-      "shortDescription": "Paul George is the rare high-percentage shooter",
-      "quantity": 445,
-      "image": "http://svcy3.myclass.vn/images/nike-air-max-270-react.png"
-    } 
-  ]
+  {
+    "id": 1,
+    "name": "Hyundai Universe 45C",
+    "price": 1000000,
+    "description": "Hyundai Universe 2022 là dòng xe khách cỡ lớn cao cấp nhất của Hyundai đươc thiết kế sang trọng và tinh tế đến từng chi tiết, trang bị cao cấp và tiện nghi, mang lại sự thoải mái tối đa cho hành khách.\r\n\r\n",
+    "shortDescription": "Hyundai Universe Nội thất rộng rãi, đẳng cấp..\r\n\r\n",
+    "quantity": 2,
+    "image": "https://xedulichhue.com/wp-content/uploads/2017/04/thue-xe-45-cho-tai-hue-3.jpg",
+    "hieuxe": "Huyndai"
+  },
+  {
+    "id": 7,
+    "name": "Hyndai Universe Prime 45C",
+    "price": 1000000,
+    "description": "Hyundai Universe 2022 là dòng xe khách cỡ lớn cao cấp nhất của Hyundai đươc thiết kế sang trọng và tinh tế đến từng chi tiết, trang bị cao cấp và tiện nghi, mang lại sự thoải mái tối đa cho hành khách.\r\n\r\n",
+    "shortDescription": "Hyundai Universe Nội thất rộng rãi, đẳng cấp.\r\n\r\n",
+    "quantity": 4,
+    "image": "https://cdn.vatgia.com/pictures/thumb/w500/2018/09/uue1536377221.jpg",
+    "hieuxe": "Huyndai"
+
+  },
+  {
+    "id": 6,
+    "name": "Thaco Prime 45C",
+    "price": 1000000,
+    "description": "Hyundai Universe 2022 là dòng xe khách cỡ lớn cao cấp nhất của Hyundai đươc thiết kế sang trọng và tinh tế đến từng chi tiết, trang bị cao cấp và tiện nghi, mang lại sự thoải mái tối đa cho hành khách.\r\n\r\n",
+    "shortDescription": "Hyundai Universe Nội thất rộng rãi, đẳng cấp...\r\n\r\n",
+    "quantity": 5,
+    "image": "https://product.hstatic.net/200000230193/product/z4322005860796_da6d064c98225363d224303f51f2165b_ecc3900ee08f4a00be8b215589063e73_master.jpg",
+    "hieuxe": "Thaco"
+
+  },
+  
+  
+  {
+    "id": 4,
+    "name": "Suzuki Takeda 4C",
+    "price": 500000,
+    "description": " Suzuki Ertiga sở hữu cho mình phần đầu xe khá sang trọng khi được mạ crom gần như hoàn toàn lưới tản nhiệt.\r\n\r\n",
+    "shortDescription": "Mang đến cho người dùng sự rộng rãi và thoải mái khi di chuyển với thân hình đồ sộ a mình..\r\n\r\n",
+    "quantity": 2,
+    "image": "https://www.suckhoedothi.com/wp-content/uploads/2023/02/ava.jpg",
+    "hieuxe": "Suzuki"
+
+  },
+  {
+    "id": 5,
+    "name": "Mitsubishi Xpander 7C",
+    "price": 500000,
+    "description": "Mitsubishi Xpander là mẫu xe ô tô 7 chỗ giá rẻ rất được ưa chuộng tại thị trường xe ô tô Việt Nam.\r\n\r\n",
+    "shortDescription": "Ngoại hình a Mitsubishi Xpander khá bắt mắt khi áp dụng triết lý thiết kế “ DYNAMIC SHIELD” mới mẻ.\r\n\r\n",
+    "quantity": 1,
+    "image": "https://xedulichhue.com/wp-content/uploads/2021/05/toyota-fortuner-2021.jpg",
+    "hieuxe": "Xpander"
+  },
+  
+ 
+  
+  {
+    "id": 8,
+    "name": "Thaco TB287 29C",
+    "price": 1500000,
+    "description": "Xe Thaco 29 chỗ được nhập khẩu khung gầm từ Hyundai Hàn Quốc nội địa hóa nội thất, thân vỏ và được lắp ráp tại nhà máy Hyundai Thaco chất lượng mới 100%.\r\n\r\n",
+    "shortDescription": "Đây là dòng xe khách đang rất được ưa chuộng tại Việt Nam bởi các tính năng về thông số kỹ thuật cũng như giá thành của xe vô cùng hợp lý.\r\n\r\n",
+    "quantity": 3,
+    "image": "https://img1.oto.com.vn/2019/11/24/20191124150057-15f0_wm.jpg",
+    "hieuxe": "Thaco"
+
+  },
+  {
+    "id": 2,
+    "name": "Thaco Garden 29C",
+    "price": 1500000,
+    "description": "Xe Thaco 29 chỗ được nhập khẩu khung gầm từ Hyundai Hàn Quốc nội địa hóa nội thất, thân vỏ và được lắp ráp tại nhà máy Hyundai Thaco chất lượng mới 100%.\r\n\r\n",
+    "shortDescription": "Đây là dòng xe khách đang rất được ưa chuộng tại Việt Nam bởi các tính năng về thông số kỹ thuật cũng như giá thành của xe vô cùng hợp lý.\r\n\r\n",
+    "quantity": 3,
+    "image": "https://chothuexegiare.com.vn/wp-content/uploads/2019/03/xe9_fw.png",
+    "hieuxe": "Thaco"
+
+  },
+  {
+    "id": 9,
+    "name": "Thaco TB288 LUXURY 29C",
+    "price": 1500000,
+    "description": "Xe Thaco 29 chỗ được nhập khẩu khung gầm từ Hyundai Hàn Quốc nội địa hóa nội thất, thân vỏ và được lắp ráp tại nhà máy Hyundai Thaco chất lượng mới 100%.\r\n\r\n",
+    "shortDescription": "Đây là dòng xe khách đang rất được ưa chuộng tại Việt Nam bởi các tính năng về thông số kỹ thuật cũng như giá thành của xe vô cùng hợp lý",
+    "quantity": 2,
+    "image": "https://phumyphat.com/wp-content/uploads/2020/10/z2140997135221_f88796f707ad24e48221691b68eeee42.jpg",
+    "hieuxe": "Thaco"
+
+  },
+  {
+    "id": 10,
+    "name": "Thaco GARDEN LUXURY 29C",
+    "price": 1500000,
+    "description": "Xe Thaco 29 chỗ được nhập khẩu khung gầm từ Hyundai Hàn Quốc nội địa hóa nội thất, thân vỏ và được lắp ráp tại nhà máy Hyundai Thaco chất lượng mới 100%.\r\n\r\n",
+    "shortDescription": "Đây là dòng xe khách đang rất được ưa chuộng tại Việt Nam bởi các tính năng về thông số kỹ thuật cũng như giá thành của xe vô cùng hợp lý",
+    "quantity": 1,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq1jmYhSCPI9vKOAibLfRkB-rXCvhIw2tqQg-uwLXDJxrXZlt0CNYJsn1IyOJtFC2jMxc&usqp=CAU",
+    "hieuxe": "Thaco"
+
+  },
+  {
+    "id": 11,
+    "name": "Solati Luxury 16C",
+    "price": 500000,
+    "description": "Với chiều dài cơ sở lên đến 3670mm, xe khách Hyundai Solati mang đến cảm giác thoải mái với không gian NỘI THẤT thực sự rộng rãi.\r\n\r\n",
+    "shortDescription": "Với thiết kế sang trọng và đẳng cấp tạo nên sự khác biệt trên đường phố",
+    "quantity": 2,
+    "image": "https://hoamaitour.com/files/image_sanpham/cho-thue-xe-16-cho-ford-tra.jpg",
+    "hieuxe": "Solati"
+
+  },
+  {
+    "id": 3,
+    "name": "Solati Prime 16C",
+    "price": 500000,
+    "description": "Với chiều dài cơ sở lên đến 3670mm, xe khách Hyundai Solati mang đến cảm giác thoải mái với không gian NỘI THẤT thực sự rộng rãi.\r\n\r\n",
+    "shortDescription": "Với thiết kế sang trọng và đẳng cấp tạo nên sự khác biệt trên đường phố.\r\n\r\n",
+    "quantity": 4,
+    "image": "https://giaxeoto.vn/admin/upload/images/resize/640-gia-xe-hyundai-solati.jpg",
+    "hieuxe": "Solati"
+
+  },
+  {
+    "id": 12,
+    "name": "Huyndai Solati",
+    "price": 500000,
+    "description": "Với chiều dài cơ sở lên đến 3670mm, xe khách Hyundai Solati mang đến cảm giác thoải mái với không gian NỘI THẤT thực sự rộng rãi.\r\n\r\n",
+    "shortDescription": "Với thiết kế sang trọng và đẳng cấp tạo nên sự khác biệt trên đường phố",
+    "quantity": 3,
+    "image": "https://kenhxehyundai.vn/wp-content/uploads/2020/10/hyundai-solati.jpg",
+    "hieuxe": "Solati"
+    
+  } 
+]

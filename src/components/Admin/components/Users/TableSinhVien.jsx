@@ -10,12 +10,12 @@ export default function TableSinhVien({
   return (
     <div>
       <div className="table-responsive mt-4 ">
-        <div className="form-group">
+        <div className="form-group container">
           <input
             type="text"
             className="form-control mb-2"
             onChange={onChangeSearchTerm}
-            placeholder="Tìm kiếm sinh viên"
+            placeholder="Tìm kiếm người dùng"
           />
         </div>
         <table className="table table-dark">

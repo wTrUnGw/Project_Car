@@ -17,13 +17,13 @@ export default function ProductDetail({ onCloseDetail, product }) {
           </div>
           <div class="modal-body">
             <div className="text-center">
-              <img src={product.image} height={300} width={300} lt="" />
+              <img src={product.image} alt="" height={300} width={300} lt="" />
             </div>
             <h3 className="text-center mb-4">{product.name}</h3>
-            <p>Mô tả sản phẩm : {product.description}</p>
+            <p>Mô tả xe : {product.description}</p>
             <p>Mô tả ngắn : {product.shortDescription}</p>
-            <p>Số lượng trong kho : {product.quantity}</p>
-            <p>Giá : {product.price} $ / 1 đôi</p>
+            <p>Số lượng xe trong bãi : {product.quantity}</p>
+            <p>Nhãn hiệu: {product.hieuxe} </p>
           </div>
           <div class="modal-footer">
             <button

@@ -8,7 +8,8 @@ import Home from "./components/Home";
 import About from "./modules/pages/About/About";
 import Contact from "./modules/pages/Contact/Contact";
 import ShoeShop from "./modules/pages/Product/ShoeShop";
-import Layout from "./components/Admin/components/Layout";
+import Layout from "./components/Admin/components/Users/Layout";
+import LayoutCar from "./components/Admin/components/Cars/LayoutCar";
 function App() {
   return (
     <BrowserRouter>
@@ -22,7 +23,9 @@ function App() {
         <Route exact path="/about" element={<About />}></Route>
         <Route exact path="/contact" element={<Contact />}></Route>
         <Route exact path="/tracuu" element={<ShoeShop />}></Route>
-        <Route exact path="/admin" element={<Layout />}></Route>
+
+        <Route exact path="/adminUser" element={<Layout />}></Route>
+        <Route exact path="/adminCar" element={<LayoutCar />}></Route>
       </Routes>
     </BrowserRouter>
   );

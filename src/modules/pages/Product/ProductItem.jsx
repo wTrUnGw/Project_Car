@@ -7,17 +7,17 @@ export default function ProductItem({ product, onAddToCart, onSetIsOpenDetail, o
   };
   return (
     <div className="card mb-5">
-      <img className="card-img" src={product.image}></img>
+      <img className="card-img width={100%}" alt="" src={product.image}></img>
       <div className="card-body">
         <h3 className="card-title">{product.name}</h3>
-        <p className="card-text">{product.price} $</p>
+        <p className="card-text">{product.price} VNĐ</p>
         <button
           className="btn btn-warning ms-1"
           onClick={() => {
             onAddToCart(product);
           }}
         >
-          THÊM GIỎ HÀNG
+          ĐẶT XE
         </button>
         <button
           className="btn btn-info ms-1"

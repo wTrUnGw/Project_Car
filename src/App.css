@@ -152,6 +152,7 @@ header .header_content .header_nav li.active a::before {
   letter-spacing: 0.015rem;
 }
 .product .card {
+  width: 300px;
   margin-bottom: 40px;
 }
 .product .btnPhone-white {
@@ -206,6 +207,7 @@ header .header_content .header_nav li.active a::before {
   border: none;
   padding: 30px;
   margin-bottom: 30px;
+  width: 100%;
 }
 .product .cardPhone img {
   box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;

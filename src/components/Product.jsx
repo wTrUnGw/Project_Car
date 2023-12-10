@@ -10,19 +10,14 @@ export default function Product() {
           <div id="listProduct" className="row">
             <div className="col-12 col-md-6 col-lg-4">
               <div className="card cardPhone">
-                <img src="./img/45V1.png" className="card-img-top" alt="" />
+                <img src="./img/xe45c6.jpg" className="card-img-top" alt="" />
                 <div className="card-body">
                   <div className="d-flex justify-content-between">
                     <div>
                       <h3 className="cardPhone_title">Xe 45 chổ</h3>
                       <p className="cardPhone_text">Xe đầy đủ tiện nghi</p>
                     </div>
-                    <div>
-                      <button className="btnPhone-shadow">
-                        <i className="fa-solid fa-circle-user" />
-                        Driver
-                      </button>
-                    </div>
+                    <div></div>
                   </div>
                   <div className="d-flex justify-content-between">
                     <div className="cardPhone_rating">
@@ -43,19 +38,14 @@ export default function Product() {
             </div>
             <div className="col-12 col-md-6 col-lg-4">
               <div className="card cardPhone">
-                <img src="./img/45V1.png" className="card-img-top" alt="..." />
+                <img src="./img/xe45c4.jpg" className="card-img-top" alt="..." />
                 <div className="card-body">
                   <div className="d-flex justify-content-between">
                     <div>
                       <h3 className="cardPhone_title">Xe 45 chổ</h3>
                       <p className="cardPhone_text">Xe đầy đủ tiện nghi</p>
                     </div>
-                    <div>
-                      <button className="btnPhone-shadow">
-                        <i className="fa-solid fa-circle-user" />
-                        Driver
-                      </button>
-                    </div>
+                    <div></div>
                   </div>
                   <div className="d-flex justify-content-between">
                     <div className="cardPhone_rating">
@@ -76,19 +66,14 @@ export default function Product() {
             </div>
             <div className="col-12 col-md-6 col-lg-4">
               <div className="card cardPhone">
-                <img src="./img/45V1.png" className="card-img-top" alt="..." />
+                <img src="./img/xe45c3.jpg" className="card-img-top" alt="..." />
                 <div className="card-body">
                   <div className="d-flex justify-content-between">
                     <div>
                       <h3 className="cardPhone_title">Xe 45 chổ</h3>
                       <p className="cardPhone_text">Xe đầy đủ tiện nghi</p>
                     </div>
-                    <div>
-                      <button className="btnPhone-shadow">
-                        <i className="fa-solid fa-circle-user" />
-                        Driver
-                      </button>
-                    </div>
+                    <div></div>
                   </div>
                   <div className="d-flex justify-content-between">
                     <div className="cardPhone_rating">
@@ -109,19 +94,14 @@ export default function Product() {
             </div>
             <div className="col-12 col-md-6 col-lg-4">
               <div className="card cardPhone">
-                <img src="./img/45V1.png" className="card-img-top" alt="..." />
+                <img src="./img/xe30c4.jpeg" className="card-img-top" alt="..." />
                 <div className="card-body">
                   <div className="d-flex justify-content-between">
                     <div>
                       <h3 className="cardPhone_title">Xe 45 chổ</h3>
                       <p className="cardPhone_text">Xe đầy đủ tiện nghi</p>
                     </div>
-                    <div>
-                      <button className="btnPhone-shadow">
-                        <i className="fa-solid fa-circle-user" />
-                        Driver
-                      </button>
-                    </div>
+                    <div></div>
                   </div>
                   <div className="d-flex justify-content-between">
                     <div className="cardPhone_rating">
@@ -142,19 +122,14 @@ export default function Product() {
             </div>
             <div className="col-12 col-md-6 col-lg-4">
               <div className="card cardPhone">
-                <img src="./img/45V1.png" className="card-img-top" alt="..." />
+                <img src="./img/xe161.jpg" className="card-img-top" alt="..." />
                 <div className="card-body">
                   <div className="d-flex justify-content-between">
                     <div>
                       <h3 className="cardPhone_title">Xe 45 chổ</h3>
                       <p className="cardPhone_text">Xe đầy đủ tiện nghi</p>
                     </div>
-                    <div>
-                      <button className="btnPhone-shadow">
-                        <i className="fa-solid fa-circle-user" />
-                        Driver
-                      </button>
-                    </div>
+                    <div></div>
                   </div>
                   <div className="d-flex justify-content-between">
                     <div className="cardPhone_rating">
@@ -175,19 +150,14 @@ export default function Product() {
             </div>
             <div className="col-12 col-md-6 col-lg-4">
               <div className="card cardPhone">
-                <img src="./img/45V1.png" className="card-img-top" alt="..." />
+                <img src="./img/xe7c3.jpg" className="card-img-top" alt="..." />
                 <div className="card-body">
                   <div className="d-flex justify-content-between">
                     <div>
                       <h3 className="cardPhone_title">Xe 45 chổ</h3>
                       <p className="cardPhone_text">Xe đầy đủ tiện nghi</p>
                     </div>
-                    <div>
-                      <button className="btnPhone-shadow">
-                        <i className="fa-solid fa-circle-user" />
-                        Driver
-                      </button>
-                    </div>
+                    <div></div>
                   </div>
                   <div className="d-flex justify-content-between">
                     <div className="cardPhone_rating">

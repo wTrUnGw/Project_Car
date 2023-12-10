@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import product from "../../../apis/product";
 import data from "./data.json";
 import ProductList from "./ProductList";
 import { useState } from "react";
+import toast from "react-hot-toast";
 import Cart from "./Cart";
 import ProductDetail from "./ProductDetail";
+import useProductApi from "../../../apis/product";
 
 export default function ShoeShop() {
+  // const [cars, setCars] = useState([]);
+  // const { addCar, fetchCars } = useProductApi();
   // state quản lý giá trị sản phẩm đang được chọn để xem chi tiết
   const [selectedProduct, setselectedProduct] = useState(null);
 
@@ -85,9 +90,26 @@ export default function ShoeShop() {
   const handleGetProduct = (product) => {
     setselectedProduct(product);
   };
+
+  // const usersFull = useRef();
+  // const getCar = async () => {
+  //   try {
+  //     const response = await fetchCars();
+  //     usersFull.current = response;
+  //     await setCars(response);
+  //     toast.success("Lấy danh sách thành công");
+  //   } catch (error) {
+  //     toast.error("Đã có lõi xảy ra");
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   getCar();
+  // });
+
   return (
     <div className="container ">
-      <h1 className="text-center text-primary">Shoe Shop</h1>
+      <h1 className="text-center text-primary">LUXURY CAR</h1>
       <div className="d-flex justify-content-end">
         <button className="btn btn-danger" onClick={() => setIsOpen(true)}>
           Lịch đặt xe ({totalProduct})

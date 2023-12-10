@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import useValidation from "../apis/useValidation";
+import useValidation from "../../apis/useValidation";
 export default function FormSV({
   onAddUser,
   selectedUser,
@@ -37,19 +37,6 @@ export default function FormSV({
         status: checkEmpty(user.id),
         messageError: "ID không được bỏ trống",
       },
-      fullname: {
-        status: checkEmpty(user.fullname),
-        messageError: "Họ tên không được bỏ trống",
-      },
-      phone: {
-        status: checkNumber(user.phone) && checkEmpty(user.phone),
-        messageError: "Phone trống hoặc không hợp lệ",
-      },
-
-      email: {
-        status: checkEmail(user.email) && checkEmpty(user.email),
-        messageError: "Email trống hoặc không hợp lệ",
-      },
     };
     for (const key in valid) {
       if (!valid[key].status) {
@@ -86,7 +73,7 @@ export default function FormSV({
   }, [selectedUser]);
 
   return (
-    <div>
+    <div className="container">
       <form onSubmit={handleSubmit}>
         <div className="row">
           <div className="col-md-6">
@@ -179,7 +166,7 @@ export default function FormSV({
             </button>
           </>
         ) : (
-          <button className="btn btn-success mt-4">Thêm Sinh Viên</button>
+          <button className="btn btn-success mt-4">Thêm người dùng</button>
         )}
       </form>
     </div>

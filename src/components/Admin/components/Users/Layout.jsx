@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import useApi from "../apis/useApi";
+import useApi from "../../apis/useApi";
 import In4SV from "./In4SV";
 import FormSV from "./FormSV";
 import TableSinhVien from "./TableSinhVien";
