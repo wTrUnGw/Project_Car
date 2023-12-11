@@ -109,7 +109,7 @@ export default function FormCar({
         <div className="row">
           <div className="col-md-6">
             <div className="form-group">
-              <label>Mã SV</label>
+              <label>Mã xe</label>
               <input
                 type="text"
                 className="form-control"
@@ -127,7 +127,7 @@ export default function FormCar({
           </div>
           <div className="col-md-6">
             <div className="form-group">
-              <label>name</label>
+              <label>Tên xe</label>
               <input
                 type="text"
                 className="form-control"
@@ -194,7 +194,7 @@ export default function FormCar({
           </div>
           <div className="col-md-6 mt-4">
             <div className="form-group">
-              <label>image</label>
+              <label>Hình ảnh</label>
               <input
                 type="text"
                 className="form-control"
@@ -231,7 +231,7 @@ export default function FormCar({
             </button>
           </>
         ) : (
-          <button className="btn btn-success mt-4">Thêm Sinh Viên</button>
+          <button className="btn btn-success mt-4">Thêm xe</button>
         )}
       </form>
     </div>
