@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Cart({
   onCloseCart,
+  onOpenForm,
   carts,
   onDeleteProductFromCart,
   onHandleChangeQuantityFromCart,
@@ -97,6 +98,14 @@ export default function Cart({
               </table>
             </div>
             <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
+                onClick={onOpenForm}
+              >
+                ĐẶT XE
+              </button>
               <button
                 type="button"
                 className="btn btn-secondary"

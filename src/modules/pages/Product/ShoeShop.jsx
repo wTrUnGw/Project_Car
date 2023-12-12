@@ -6,7 +6,8 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import Cart from "./Cart";
 import ProductDetail from "./ProductDetail";
-import useProductApi from "../../../apis/product";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
 
 export default function ShoeShop() {
   // const [cars, setCars] = useState([]);
@@ -19,6 +20,9 @@ export default function ShoeShop() {
 
   //modal - state quản lý trạng thái ẩn hiện của Detail
   const [isOpenDetail, setIsOpenDetail] = useState(false);
+
+  //modal - state quán lý form
+  const [isOpenForm, setIsOpenForm] = useState(false);
 
   // state quản lý sản phẩm trong giỏ hàng
   const [carts, setCarts] = useState([]);
@@ -70,6 +74,10 @@ export default function ShoeShop() {
     }
     setCarts(gioHangCapNhat);
   };
+  // mở popup
+  const handleOpenForm = () => {
+    setIsOpenForm(true);
+  };
 
   // đóng giỏ hàng
   const handleCloseCart = () => {
@@ -108,30 +116,35 @@ export default function ShoeShop() {
   // });
 
   return (
-    <div className="container ">
-      <h1 className="text-center text-primary">LUXURY CAR</h1>
-      <div className="d-flex justify-content-end">
-        <button className="btn btn-danger" onClick={() => setIsOpen(true)}>
-          Lịch đặt xe ({totalProduct})
-        </button>
-      </div>
-      <ProductList
-        onGetProduct={handleGetProduct}
-        products={data}
-        onAddToCart={handleAddToCart}
-        onSetIsOpenDetail={handleOpenDetail}
-      />
-      {isOpen && (
-        <Cart
-          onHandleChangeQuantityFromCart={handleChangeQuantityFromCart}
-          carts={carts}
-          onCloseCart={handleCloseCart}
-          onDeleteProductFromCart={handleDeleteProductFromCart}
+    <>
+      <Header />
+      <div className="container ">
+        <h1 className="text-center text-primary pt-5">LUXURY CAR</h1>
+        <div className="d-flex justify-content-end">
+          <button className="btn btn-danger mb-4 " onClick={() => setIsOpen(true)}>
+            <i class="fa fa-paper-plane"></i> Lịch đặt xe ({totalProduct})
+          </button>
+        </div>
+        <ProductList
+          onGetProduct={handleGetProduct}
+          products={data}
+          onAddToCart={handleAddToCart}
+          onSetIsOpenDetail={handleOpenDetail}
         />
-      )}
-      {isOpenDetail && (
-        <ProductDetail product={selectedProduct} onCloseDetail={handleCloseDetail} />
-      )}
-    </div>
+        {isOpen && (
+          <Cart
+            onHandleChangeQuantityFromCart={handleChangeQuantityFromCart}
+            carts={carts}
+            onCloseCart={handleCloseCart}
+            onOpenForm={handleOpenForm}
+            onDeleteProductFromCart={handleDeleteProductFromCart}
+          />
+        )}
+        {isOpenDetail && (
+          <ProductDetail product={selectedProduct} onCloseDetail={handleCloseDetail} />
+        )}
+      </div>
+      <Footer />
+    </>
   );
 }

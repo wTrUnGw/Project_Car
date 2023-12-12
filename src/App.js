@@ -1,8 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import Login from "./components/Login";
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
-import Signup from "./components/Signup";
 import Main from "./components/layout/Main";
 import Home from "./components/Home";
 import About from "./modules/pages/About/About";
@@ -10,6 +8,9 @@ import Contact from "./modules/pages/Contact/Contact";
 import ShoeShop from "./modules/pages/Product/ShoeShop";
 import Layout from "./components/Admin/components/Users/Layout";
 import LayoutCar from "./components/Admin/components/Cars/LayoutCar";
+import BusTicket from "./modules/Auth/busTicket/BusTicket";
+import Login from "./components/Home/Login/Login";
+import Signup from "./components/Home/Signup/Signup";
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +27,7 @@ function App() {
 
         <Route exact path="/adminUser" element={<Layout />}></Route>
         <Route exact path="/adminCar" element={<LayoutCar />}></Route>
+        <Route exact path="/busTicket" element={<BusTicket />}></Route>
       </Routes>
     </BrowserRouter>
   );

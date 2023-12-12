@@ -3,16 +3,17 @@ import ItemCar from "./ItemCar";
 export default function TableCar({ users, onDelete, onGetUser, onChangeSearchTerm, cancelUpdate }) {
   return (
     <div>
-      <div className="table-responsive mt-4 ">
+      <div className="table-responsive mt-4  ">
         <div className="form-group container">
           <input
             type="text"
             className="form-control mb-2"
             onChange={onChangeSearchTerm}
-            placeholder="Tìm kiếm sinh viên"
+            placeholder="Tìm kiếm xe"
           />
         </div>
-        <table className="table table-dark container">
+
+        <table className="table table-dark ">
           <thead>
             <tr>
               <th scope="col">Mã SV</th>

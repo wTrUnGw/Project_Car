@@ -37,6 +37,19 @@ export default function FormSV({
         status: checkEmpty(user.id),
         messageError: "ID không được bỏ trống",
       },
+      fullname: {
+        status: checkEmpty(user.fullname),
+        messageError: "Họ tên không được bỏ trống",
+      },
+      phone: {
+        status: checkNumber(user.phone) && checkEmpty(user.phone),
+        messageError: "Phone trống hoặc không hợp lệ",
+      },
+
+      email: {
+        status: checkEmail(user.email) && checkEmpty(user.email),
+        messageError: "Email trống hoặc không hợp lệ",
+      },
     };
     for (const key in valid) {
       if (!valid[key].status) {

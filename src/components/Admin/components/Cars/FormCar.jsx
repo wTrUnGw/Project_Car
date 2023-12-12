@@ -44,6 +44,30 @@ export default function FormCar({
         status: checkEmpty(user.id),
         messageError: "ID không được bỏ trống",
       },
+      name: {
+        status: checkEmpty(user.name),
+        messageError: "Tên không được bỏ trống",
+      },
+      hieuxe: {
+        status: checkEmpty(user.hieuxe),
+        messageError: "Hiệu xe không được bỏ trống",
+      },
+      description: {
+        status: checkEmpty(user.description),
+        messageError: "Mô tả Không được bỏ trống",
+      },
+      shortdescription: {
+        status: checkEmpty(user.shortdescription),
+        messageError: "Mô tả ngắn không được bỏ trống",
+      },
+      quanlity: {
+        status: checkEmpty(user.quanlity),
+        messageError: "Số lượng không được bỏ trống",
+      },
+      image: {
+        status: checkEmpty(user.image),
+        messageError: "Link hình ảnh không được bỏ trống",
+      },
     };
     for (const key in valid) {
       if (!valid[key].status) {
@@ -113,7 +137,7 @@ export default function FormCar({
               <input
                 type="text"
                 className="form-control"
-                placeholder="Nhập mã sv"
+                placeholder="Nhập mã xe"
                 name="id"
                 onChange={handleChange}
                 value={user.id}
@@ -131,14 +155,19 @@ export default function FormCar({
               <input
                 type="text"
                 className="form-control"
-                placeholder="Nhập name"
+                placeholder="Nhập tên xe"
                 name="name"
                 onChange={handleChange}
                 value={user.name}
               />
+              {validation.name && (
+                <div className="alert alert-danger mt-2 " role="alert">
+                  {validation.name}
+                </div>
+              )}
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 mt-4">
             <div className="form-group">
               <label>Hiệu xe</label>
               <input
@@ -149,6 +178,11 @@ export default function FormCar({
                 onChange={handleChange}
                 value={user.hieuxe}
               />
+              {validation.hieuxe && (
+                <div className="alert alert-danger mt-2 " role="alert">
+                  {validation.hieuxe}
+                </div>
+              )}
             </div>
           </div>
           <div className="col-md-6 mt-4">
@@ -162,26 +196,36 @@ export default function FormCar({
                 onChange={handleChange}
                 value={user.description}
               />
+              {validation.description && (
+                <div className="alert alert-danger mt-2 " role="alert">
+                  {validation.description}
+                </div>
+              )}
             </div>
           </div>
 
           <div className="col-md-6 mt-4">
             <div className="form-group">
-              <label>shortdescription</label>
+              <label>Short description</label>
               <input
                 type="text"
                 className="form-control"
-                placeholder="Viết mô tả"
+                placeholder="Viết mô tả ngắn"
                 name="shortdescription"
                 onChange={handleChange}
                 value={user.shortdescription}
               />
+              {validation.shortdescription && (
+                <div className="alert alert-danger mt-2 " role="alert">
+                  {validation.shortdescription}
+                </div>
+              )}
             </div>
           </div>
 
           <div className="col-md-6 mt-4">
             <div className="form-group">
-              <label>quanlity</label>
+              <label>Quanlity</label>
               <input
                 type="text"
                 className="form-control"
@@ -190,6 +234,11 @@ export default function FormCar({
                 onChange={handleChange}
                 value={user.quanlity}
               />
+              {validation.quanlity && (
+                <div className="alert alert-danger mt-2 " role="alert">
+                  {validation.quanlity}
+                </div>
+              )}
             </div>
           </div>
           <div className="col-md-6 mt-4">
@@ -203,6 +252,11 @@ export default function FormCar({
                 onChange={handleChange}
                 value={user.image}
               />
+              {validation.image && (
+                <div className="alert alert-danger mt-2 " role="alert">
+                  {validation.image}
+                </div>
+              )}
             </div>
           </div>
         </div>

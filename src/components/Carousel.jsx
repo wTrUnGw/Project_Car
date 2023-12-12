@@ -16,7 +16,7 @@ export default function Carousel() {
                   nước Việt Nam và có những kỉ niệm khó phai bên gia đình người thân.
                 </p>
                 <div>
-                  <button className="btnPhone-white mr-2">
+                  <button className="btnPhone-white me-2">
                     <NavLink className="nav-link" to="/about">
                       <i className="fa fa-info-circle" /> Thông tin thêm
                     </NavLink>
