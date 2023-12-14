@@ -9,7 +9,8 @@ import ShoeShop from "./modules/pages/Product/ShoeShop";
 import Layout from "./components/Admin/components/Users/Layout";
 import LayoutCar from "./components/Admin/components/Cars/LayoutCar";
 import BusTicket from "./modules/Auth/busTicket/BusTicket";
-import Login from "./components/Home/Login/Login";
+import ProductFullDetail from "./modules/pages/Product/ProductFullDetail";
+import Signin from "./components/Home/Signin/Signin";
 import Signup from "./components/Home/Signup/Signup";
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Routes>
         <Route path="" element={<Main />}></Route>
         <Route index element={<Home />}></Route>
-        <Route exact path="/login" element={<Login />}></Route>
+        <Route exact path="/login" element={<Signin />}></Route>
         <Route exact path="/signup" element={<Signup />}></Route>
         <Route exact path="/home" element={<Header />}></Route>
         <Route exact path="/" element={<Home />}></Route>
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/adminUser" element={<Layout />}></Route>
         <Route exact path="/adminCar" element={<LayoutCar />}></Route>
         <Route exact path="/busTicket" element={<BusTicket />}></Route>
+        <Route exact path="/detail" element={<ProductFullDetail />}></Route>
       </Routes>
     </BrowserRouter>
   );

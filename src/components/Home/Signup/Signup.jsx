@@ -1,89 +1,95 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import validation from "./SignupValidation";
-import axios from "axios";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useNavigate } from "react-router-dom";
+import { object, string } from "yup";
+import { signupAPI } from "../../../apis/user";
+
+const validationSchema = object({
+  taiKhoan: string().required("Tài khoản không được để trống"),
+  matKhau: string()
+    .required("Mật khẩu không được để trống")
+    .matches(
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/,
+      "Mật khẩu phải có ít nhất 8 kí tự, gồm 1 kí tự hoa, 1 kí tự thường và 1 kí tự số"
+    ),
+  email: string().required("Email không được để trống").email("Email không đúng định dạng"),
+  hoTen: string().required("Họ tên không được để trống"),
+  soDt: string().required("Số điện thoại không được để trống"),
+});
+
 export default function Signup() {
-  const [values, setValues] = useState({
-    name: "",
-    email: "",
-    password: "",
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      taiKhoan: "",
+      matKhau: "",
+      hoTen: "",
+      email: "",
+      soDt: "",
+    },
+    resolver: yupResolver(validationSchema),
   });
+  const navigate = useNavigate();
 
-  const [errors, setErros] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-  const handleInput = (event) => {
-    setValues((prev) => ({ ...prev, [event.target.name]: [event.target.value] }));
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setErros(validation(values));
-    if (errors.name === " " && errors.email === "" && errors.password === "") {
-      axios
-        .post("http://localhost:8081/login", values)
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err));
+  const handleSignup = async (values) => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      await signupAPI(values);
+      navigate("/sign-in");
+    } catch (error) {
+      setError(error);
+    } finally {
+      setIsLoading(false);
     }
   };
+
   return (
-    <div className="d-flex justify-content-center align-items-center bg-primary vh-100">
-      <div className="bg-white p-3 rounded w-25">
-        <h2>SignUp</h2>
-        <form action="" onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label htmlFor="name">
-              <strong>Name</strong>
-            </label>
-            <input
-              className="form-control rounded-0"
-              type="name"
-              autocomplete="username"
-              placeholder="Enter Name"
-              name="name"
-              onChange={handleInput}
-            />
-            {errors.name && <span className="text-danger">{errors.name} </span>}
-          </div>
-          <div className="mb-3">
-            <label htmlFor="email">
-              <strong>Email</strong>
-            </label>
-            <input
-              className="form-control rounded-0"
-              type="email"
-              placeholder="Enter Email"
-              name="email"
-              onChange={handleInput}
-            />
-            {errors.email && <span className="text-danger">{errors.email} </span>}
-          </div>
-          <div className="mb-3">
-            <label htmlFor="password">
-              <strong>Password</strong>
-            </label>
-            <input
-              className="form-control rounded-0"
-              type="password"
-              autocomplete="current-password"
-              placeholder="Enter Password"
-              name="password"
-              onChange={handleInput}
-            />
-            {errors.password && <span className="text-danger">{errors.password} </span>}
-          </div>
-          <button type="submit" className="btn btn-success w-100 rounded-0">
-            Sign up
-          </button>
-          <p>You are agree to aour terms and policies </p>
-          {/* <button className="btn btn-default border w-100 rounded-0">Create Account</button> */}
-          <Link
-            to="/login"
-            className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none"
-          >
-            Login
-          </Link>
-        </form>
-      </div>
+    <div>
+      <h1>Signup</h1>
+
+      <form noValidate onSubmit={handleSubmit(handleSignup)}>
+        <div>
+          <label>Tài Khoản</label>
+          <input {...register("taiKhoan")} />
+          {errors.taiKhoan && <span>{errors.taiKhoan.message}</span>}
+        </div>
+
+        <div>
+          <label>Mật Khẩu</label>
+          <input {...register("matKhau")} />
+          {errors.matKhau && <span>{errors.matKhau.message}</span>}
+        </div>
+
+        <div>
+          <label>Email</label>
+          <input type="email" {...register("email")} />
+          {errors.email && <span>{errors.email.message}</span>}
+        </div>
+
+        <div>
+          <label>Họ Tên</label>
+          <input {...register("hoTen")} />
+          {errors.hoTen && <span>{errors.hoTen.message}</span>}
+        </div>
+
+        <div>
+          <label>Số Điện Thoại</label>
+          <input {...register("soDt")} />
+          {errors.soDt && <span>{errors.soDt.message}</span>}
+        </div>
+
+        {error && <p>{error}</p>}
+
+        <button disabled={isLoading}>Đăng Ký</button>
+      </form>
     </div>
   );
 }

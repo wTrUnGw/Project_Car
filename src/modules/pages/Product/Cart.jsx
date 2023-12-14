@@ -102,14 +102,6 @@ export default function Cart({
                 type="button"
                 className="btn btn-secondary"
                 data-bs-dismiss="modal"
-                onClick={onOpenForm}
-              >
-                ĐẶT XE
-              </button>
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
                 onClick={onCloseCart}
               >
                 ĐÓNG

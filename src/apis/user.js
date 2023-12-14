@@ -1,21 +1,25 @@
-import fetcher from "./fetcher";
+import baseAPI from "./fetcher";
 
-// ĐĂNG KÝ
-export const signup = async (payload) => {
+export async function signinAPI(credentials) {
   try {
-    const response = await fetcher.post("/signup", payload);
-    return response.data?.content;
+    const resp = await baseAPI.post("/quanlynguoidung/dangnhap", credentials);
+    return resp.data.content;
   } catch (error) {
-    throw error.response.data?.content;
+    if (error.response) {
+      throw error.response.data?.content;
+    }
+    throw error.message;
   }
-};
+}
 
-// ĐĂNG NHẬP
-export const login = async (payload) => {
+export async function signupAPI(credentials) {
   try {
-    const response = await fetcher.post("/login", payload);
-    return response.data?.content;
+    const resp = await baseAPI.post("/quanlynguoidung/dangky", credentials);
+    return resp.data.content;
   } catch (error) {
-    throw error.response.data?.content;
+    if (error.response) {
+      throw error.response.data?.content;
+    }
+    throw error.message;
   }
-};
+}

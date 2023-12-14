@@ -8,6 +8,8 @@ import Cart from "./Cart";
 import ProductDetail from "./ProductDetail";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
+import useCarApi from "../../../components/Admin/apis/useCarAPI";
+import axios from "axios";
 
 export default function ShoeShop() {
   // const [cars, setCars] = useState([]);
@@ -74,11 +76,9 @@ export default function ShoeShop() {
     }
     setCarts(gioHangCapNhat);
   };
-  // mở popup
-  const handleOpenForm = () => {
-    setIsOpenForm(true);
-  };
 
+  const [posts, setPosts] = useState([]);
+  const [selectedItem, setSelectedItem] = useState("");
   // đóng giỏ hàng
   const handleCloseCart = () => {
     setIsOpen(false);
@@ -99,26 +99,21 @@ export default function ShoeShop() {
     setselectedProduct(product);
   };
 
-  // const usersFull = useRef();
-  // const getCar = async () => {
-  //   try {
-  //     const response = await fetchCars();
-  //     usersFull.current = response;
-  //     await setCars(response);
-  //     toast.success("Lấy danh sách thành công");
-  //   } catch (error) {
-  //     toast.error("Đã có lõi xảy ra");
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   getCar();
-  // });
+  useEffect(() => {
+    axios.get("data").then((response) => {
+      setPosts(response.data);
+    });
+  }, []);
 
   return (
     <>
       <Header />
       <div className="container ">
+        <select value={selectedItem} onChange={(evt) => setSelectedItem(evt.target.value)}>
+          <option value="">All</option>
+          <option value={1}>Hyundai</option>
+          <option value={2}>Thaco</option>
+        </select>
         <h1 className="text-center text-primary pt-5">LUXURY CAR</h1>
         <div className="d-flex justify-content-end">
           <button className="btn btn-danger mb-4 " onClick={() => setIsOpen(true)}>
@@ -136,7 +131,7 @@ export default function ShoeShop() {
             onHandleChangeQuantityFromCart={handleChangeQuantityFromCart}
             carts={carts}
             onCloseCart={handleCloseCart}
-            onOpenForm={handleOpenForm}
+            // onOpenForm={handleOpenForm}
             onDeleteProductFromCart={handleDeleteProductFromCart}
           />
         )}
