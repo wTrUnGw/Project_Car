@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Cart({
   onCloseCart,
-  onOpenForm,
+
   carts,
   onDeleteProductFromCart,
   onHandleChangeQuantityFromCart,

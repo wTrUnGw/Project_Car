@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import product from "../../../apis/product";
-import data from "./data.json";
+// import product from "../../../apis/product";
+// import data from "./data.json";
 import ProductList from "./ProductList";
 import { useState } from "react";
 import toast from "react-hot-toast";
@@ -12,8 +12,6 @@ import useCarApi from "../../../components/Admin/apis/useCarAPI";
 import axios from "axios";
 
 export default function ShoeShop() {
-  // const [cars, setCars] = useState([]);
-  // const { addCar, fetchCars } = useProductApi();
   // state quản lý giá trị sản phẩm đang được chọn để xem chi tiết
   const [selectedProduct, setselectedProduct] = useState(null);
 
@@ -22,9 +20,6 @@ export default function ShoeShop() {
 
   //modal - state quản lý trạng thái ẩn hiện của Detail
   const [isOpenDetail, setIsOpenDetail] = useState(false);
-
-  //modal - state quán lý form
-  const [isOpenForm, setIsOpenForm] = useState(false);
 
   // state quản lý sản phẩm trong giỏ hàng
   const [carts, setCarts] = useState([]);
@@ -78,7 +73,9 @@ export default function ShoeShop() {
   };
 
   const [posts, setPosts] = useState([]);
-  const [selectedItem, setSelectedItem] = useState("");
+  // const [selectedItem, setSelectedItem] = useState("");
+  const [searchValue, setSearchValue] = useState("");
+  const [filteredPosts, setFilteredPosts] = useState([]);
   // đóng giỏ hàng
   const handleCloseCart = () => {
     setIsOpen(false);
@@ -100,20 +97,56 @@ export default function ShoeShop() {
   };
 
   useEffect(() => {
-    axios.get("data").then((response) => {
-      setPosts(response.data);
-    });
+    axios
+      .get("https://65743d90f941bda3f2af8183.mockapi.io/api/qlxe/cars")
+      .then((response) => {
+        setPosts(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
   }, []);
+
+  useEffect(() => {
+    // Tìm kiếm dựa trên trường "hieuxe"
+    const filteredPosts = posts.filter((post) =>
+      post.hieuxe.toLowerCase().includes(searchValue.toLowerCase())
+    );
+
+    // Cập nhật danh sách bài viết đã lọc
+    // Đây là nơi bạn có thể lưu danh sách bài viết đã lọc để hiển thị trong giao diện người dùng
+    console.log(filteredPosts);
+  }, [searchValue, posts]);
+
+  const handleSearchChange = (event) => {
+    setSearchValue(event.target.value);
+  };
 
   return (
     <>
       <Header />
       <div className="container ">
-        <select value={selectedItem} onChange={(evt) => setSelectedItem(evt.target.value)}>
-          <option value="">All</option>
-          <option value={1}>Hyundai</option>
-          <option value={2}>Thaco</option>
-        </select>
+        <div>
+          <input
+            type="text"
+            placeholder="Search by hieuxe"
+            value={searchValue}
+            onChange={handleSearchChange}
+          />
+          {/* Hiển thị danh sách bài viết đã lọc */}
+          {/* setPosts={posts} */}
+          {filteredPosts.map((posts) => (
+            <div key={posts.id}>
+              <h3>{posts.name}</h3>
+              <p>Price: {posts.price}</p>
+              <p>Description: {posts.description}</p>
+              <p>Short Description: {posts.shortDescription}</p>
+              <p>Quantity: {posts.quantity}</p>
+              <img src={posts.image} alt={posts.name} />
+              <p>Hieuxe: {posts.hieuxe}</p>
+            </div>
+          ))}
+        </div>
         <h1 className="text-center text-primary pt-5">LUXURY CAR</h1>
         <div className="d-flex justify-content-end">
           <button className="btn btn-danger mb-4 " onClick={() => setIsOpen(true)}>
@@ -122,7 +155,7 @@ export default function ShoeShop() {
         </div>
         <ProductList
           onGetProduct={handleGetProduct}
-          products={data}
+          products={posts}
           onAddToCart={handleAddToCart}
           onSetIsOpenDetail={handleOpenDetail}
         />

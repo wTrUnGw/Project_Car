@@ -18,7 +18,6 @@
     "quantity": 5,
     "image": "https://muabanxekhach.com.vn/wp-content/uploads/2019/04/universe-nhap-khau-han-quoc.jpg",
     "hieuxe": "Thaco"
-
   },
   {
     "id": 4,
@@ -29,7 +28,6 @@
     "quantity": 2,
     "image": "https://www.suckhoedothi.com/wp-content/uploads/2023/02/ava.jpg",
     "hieuxe": "Suzuki"
-
   },
   {
     "id": 5,
@@ -50,10 +48,8 @@
     "quantity": 3,
     "image": "https://gfavietnam.com.vn/uploads/products/gia-xe-29-cho-truong-hai-xe-29-cho-thaco-town-tb85-than-dai-8-5m-anh-so-41622074.jpeg",
     "hieuxe": "Thaco"
-
   },
-  
-  
+
   {
     "id": 8,
     "name": "Thaco TB287 29C",
@@ -63,7 +59,6 @@
     "quantity": 3,
     "image": "https://img1.oto.com.vn/2019/11/24/20191124150057-15f0_wm.jpg",
     "hieuxe": "Thaco"
-
   },
   {
     "id": 7,
@@ -74,7 +69,6 @@
     "quantity": 4,
     "image": "https://cdn.vatgia.com/pictures/thumb/w500/2018/09/uue1536377221.jpg",
     "hieuxe": "Huyndai"
-
   },
   {
     "id": 9,
@@ -85,7 +79,6 @@
     "quantity": 2,
     "image": "https://phumyphat.com/wp-content/uploads/2020/10/z2140997135221_f88796f707ad24e48221691b68eeee42.jpg",
     "hieuxe": "Thaco"
-
   },
   {
     "id": 10,
@@ -96,7 +89,6 @@
     "quantity": 1,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq1jmYhSCPI9vKOAibLfRkB-rXCvhIw2tqQg-uwLXDJxrXZlt0CNYJsn1IyOJtFC2jMxc&usqp=CAU",
     "hieuxe": "Thaco"
-
   },
   {
     "id": 11,
@@ -107,7 +99,6 @@
     "quantity": 2,
     "image": "https://hoamaitour.com/files/image_sanpham/cho-thue-xe-16-cho-ford-tra.jpg",
     "hieuxe": "Solati"
-
   },
   {
     "id": 3,
@@ -118,7 +109,6 @@
     "quantity": 4,
     "image": "https://giaxeoto.vn/admin/upload/images/resize/640-gia-xe-hyundai-solati.jpg",
     "hieuxe": "Solati"
-
   },
   {
     "id": 12,
@@ -129,6 +119,5 @@
     "quantity": 3,
     "image": "https://kenhxehyundai.vn/wp-content/uploads/2020/10/hyundai-solati.jpg",
     "hieuxe": "Solati"
-    
-  } 
+  }
 ]
